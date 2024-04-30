@@ -1,7 +1,4 @@
-﻿/**/
-
-
-//int[] pos_livro_estante = new string[10];
+﻿//int[] pos_livro_estante = new string[10];
 int posicao_livro, pos_livro_final;
 int consultar, consultar_aux;
 
@@ -192,6 +189,7 @@ Console.WriteLine("-------------------------------------");
 Console.WriteLine("-------------------------------------");
 Console.WriteLine();
 
+#region consultarLivros
 consultar_aux = ConsultarLivro();
 
 while (consultar_aux == 1)
@@ -264,6 +262,7 @@ while (consultar_aux == 1)
     Console.WriteLine();
     consultar_aux = ConsultarLivro();
 }
+#endregion
 
 Console.WriteLine("Aperte ENTER para encerrar.");
 Console.ReadKey();

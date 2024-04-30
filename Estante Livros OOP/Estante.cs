@@ -34,42 +34,32 @@ public class Estante
 
     public void DefinirDataLancamento()
     {
-        DateOnly data_lancamento;
         Console.Write("Data de Lançamento: ");
-        data_lancamento = DateOnly.Parse(Console.ReadLine());
-        this.DataLancamentoLivro = data_lancamento;
+        this.DataLancamentoLivro = DateOnly.Parse(Console.ReadLine());
     }
 
     public void DefinirEditoraLivro()
     {
-        string editora_livro;
         Console.Write("Editora: ");
-        editora_livro = Console.ReadLine();
-        this.EditoraLivro = editora_livro;
+        this.EditoraLivro = Console.ReadLine();
     }
 
     public void DefinirEdicaoLivro()
     {
-        int edicao_livro;
         Console.Write("Edição: ");
-        edicao_livro = int.Parse(Console.ReadLine());
-        this.EdicaoLivro = edicao_livro;
+        this.EdicaoLivro = int.Parse(Console.ReadLine());
     }
 
     public void DefinirISBNLivro()
     {
-        int isbn_livro;
         Console.Write("ISBN: ");
-        isbn_livro = int.Parse(Console.ReadLine());
-        this.ISBN = isbn_livro;
+        this.ISBN = int.Parse(Console.ReadLine());
     }
 
     public void DefinirTotalPaginasLivro()
-    {
-        int paginas_livro;
+    {    
         Console.Write("Número de Páginas: ");
-        paginas_livro = int.Parse(Console.ReadLine());
-        this.TotalPaginas = paginas_livro;
+        this.TotalPaginas = int.Parse(Console.ReadLine());
     }
     public void MostrarDados()
     {
